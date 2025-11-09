@@ -330,52 +330,14 @@ MIT License - используйте свободно!
 ---
 
 **Сделано с ❤️ для DevOps-сообщества**
-"""
 
-with open('/home/user/README.md', 'w') as f:
-    f.write(readme)
 
-print("✅ Создан README.md")
-print("\n" + "="*60)
-print("📦 ИТОГОВЫЙ НАБОР ФАЙЛОВ:")
-print("="*60)
-
-files_summary = """
 ✅ preseed-minimal.cfg          - Конфигурация автоустановки
 ✅ build-preseed-iso.sh         - Скрипт сборки ISO
 ✅ CHEATSHEET.md                - Шпаргалка команд
 ✅ README.md                    - Полная документация
 ✅ preseed-iso-workflow.png     - Визуальная схема процесса
 
-📁 Структура готова для публикации на GitHub!
-"""
-
-print(files_summary)
-
-# Создадим также .gitignore
-gitignore = """# ISO файлы
-*.iso
-
-# Временные директории
-iso-extract/
-tmp/
-
-# Логи
-*.log
-
-# Бэкапы
-*.bak
-*.backup
-
-# OS
-.DS_Store
-Thumbs.db
-"""
-
-with open('/home/user/.gitignore', 'w') as f:
-    f.write(gitignore)
-
-print("\n✅ Создан .gitignore")
 
 # Создадим LICENSE
 license_text = """MIT License
